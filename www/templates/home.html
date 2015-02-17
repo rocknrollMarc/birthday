@@ -1,0 +1,12 @@
+<ion-view view-title="Coucou">
+	<ion-content>
+		<h1>Coucou mon petit Maxou !</h1>
+		<ion-list>
+			<a class="item item-avatar" href="#" ng-repeat="message in messages">
+				<img ng-src="{{message.avatar}}">
+				<h2>{{message.from}}</h2>
+				<p>{{message.text}}</p>
+			</a>
+		</ion-list>
+	</ion-content>
+</ion-view>
