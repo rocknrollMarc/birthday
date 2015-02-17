@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>Alfred Client</name>
+<widget id="com.ghiltoniel.maxou" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>Maxou's</name>
   <description>
-        Hello World sample application that responds to the deviceready event.
+        Maxou's birthday app !
     </description>
-  <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+  <author email="support@maxous.com" href="http://www.maxou.com">
+        Maxou's team
     </author>
   <content src="index.html"/>
   <icon src="icon.png" />
