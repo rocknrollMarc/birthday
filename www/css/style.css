@@ -1,114 +1,38 @@
-/* Empty. Add your own CSS if you like */
-
-.bar{
-	padding: 8px;
-	height: 50px;
-	background-color:rgb(47,51,62);	
+.slider{
+	height: 100%;
 }
 
-.bar .title{
-	top: 4px;
-	color:#fff;
+#slide-1 img{
+	max-width:100%;
 }
 
-.has-header{
-	top: 50px;
+#slide-1 h1{
+	text-align:center;
+	margin-top:10px;
 }
 
-.menu{
-	background-color:rgb(47,51,62);
+#slide-1 h2{
+	text-align:center;
 }
 
-.menu .bar-header{
-	background: rgb(60,173,155);
+.dir-right, .dir-left{
+	position: absolute;
+	z-index: 10;
+	width:50px;
+	height:50px;
+	top:50%;
+	margin-top:-15px;
 }
 
-.menu .item {
-	background: rgba(0,0,0,0);
-	border: none;
-	color:#fff;
+.dir-right{
+	right:10px;
 }
 
-.menu .item .icon {
-	color:rgb(60,173,155);
+#home-content .ion-ios7-reloading{
+	margin:auto;
+	display: block;
 }
 
-.menu .item-complex .item-content{
-	background:transparent;
-}
-
-.tabbed-slidebox .slider-slide{
-	background-color:transparent;
-}
-
-.tabbed-slidebox .tsb-icons:after{
-	border-width: 0 0.8em 0.8em 0.8em;
-	border-color: transparent transparent #ccc transparent;
-	margin-left: -6px;
-	bottom: 0px;
-}
-
-.tabbed-slidebox .tsb-icons{
-	margin: 0;
-	padding: 0;
-	background: rgb(60,173,155);
-}
-
-.tabbed-slidebox .tsb-icons a {
-	font-size: 2em;
-}
-
-.tabbed-slidebox .tsb-icons a::before{
-	color:white;
-}
-
-.tabbed-slidebox .tsb-icons a.active {
-	font-size: 3em;
-}
-
-.tabbed-slidebox .slider {
-	padding-top: 5%;
-}
-
-.row.light{
-	margin: -8px;
-}
-
-.message .even {
-	text-align:right;
-}
-
-.message .item-thumbnail-right, .message .item-thumbnail-left {
-	border: none;
-}
-
-.message img {
-	max-height: 70px !important;
-	max-width: 70px !important;
-}
-
-.range {
-	padding: 0;
-	margin-top: -10px;
-}
-
-.k-colorpicker, #spectrum{
-	display:none;
-}
-
-.k-animation-container{
-	top: 50% !important;
-	left: 50% !important;
-	margin-top: -125px !important;
-	margin-left: -125px !important;
-	background-color: white;
-}
-
-.popover{
-	opacity: 1;
-}
-
-input[type="color"] {
-	display: inline-block;
-	flex-basis: 100px;
+#home-content .ion-ios7-reloading:before{
+	font-size: 40px;
 }
