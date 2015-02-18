@@ -1,0 +1,24 @@
+<ion-view view-title="Maxou's bday !">
+	<ion-content id="home-content">
+		<h3 class="padding">Ta carte de voeux : </h3>
+		<button class="button button-large button-clear ion-ios7-reloading" ng-show="loading"></button>
+		<ion-list>
+			<a class="item item-avatar" href="#" ng-click="open(message)" ng-repeat="message in messages">
+				<img ng-src="{{message.avatar}}">
+				<h2>{{message.from}}</h2>
+			</a>
+		</ion-list>
+		
+		<script id="carte-modal.html" type="text/ng-template">
+		  <ion-modal-view>
+			<ion-header-bar>
+			  <h1 class="title">{{ from }}</h1>
+			  <button ng-click="close()" class="button button-clear">Fermer</button>
+			</ion-header-bar>
+			<ion-content>
+			  {{ text }}
+			</ion-content>
+		  </ion-modal-view>
+		</script>
+	</ion-content>
+</ion-view>
