@@ -6,7 +6,7 @@
 			<h1>Coucou mon petit Maxou !</h1>
 			<h2>Il parait que c'est ton anniversaire aujourd'hui</h2>
 			<div class="tooltip-container" on-release="next()">
-				<img class="padding-top" src="img/hb.gif"/>
+				<img class="padding-top" ng-src="img/hb.gif"/>
 				<p class="tooltip">Caresse-moi !</p>
 			</div>
 		</div>
@@ -18,14 +18,14 @@
 				<ion-radio ng-change="checkWise('Oui')" ng-model="wise" ng-value="'Oui'">Oui</ion-radio>
 				<ion-radio ng-change="checkWise('Non')" ng-model="wise" ng-value="'Non'">Non</ion-radio>
 			</p>
+			<img src="{{wiseImg}}" ng-show="wiseImgShow"/>
 			<button ng-click="next()" ng-show="wiseValid" class="button button-full button-positive">Continuer l'orgasme ></button>
 		</div>
 	  </ion-slide>
 	  <ion-slide id="slide-3">
 		<div class="padding">
-			<h1>Résous ce petit calcul et un monde de merveille s'ouvrira à toi !</h1>
-			<h2>A venir...</h2>
-			<a href="#/app/home" class="button button-full button-valanced">Go to the awesomeness</a>
+			<h1>Connecte-toi et accède à un monde de merveille !</h1>
+			<button ng-click="login()" class="button button-full button-balanced">Go to the awesomeness</button>
 		</div>
 	  </ion-slide>
 	</ion-slide-box>

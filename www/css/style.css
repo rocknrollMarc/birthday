@@ -5,6 +5,11 @@
 #slide-1 img, #slide-2 img, #slide-3 img{
 	max-width:100%;
 }
+#slide-2 img {
+	max-height:200px;
+	margin:auto;
+	display:block;
+}
 
 #slide-1 h1, #slide-2 h1, #slide-3 h1{
 	text-align:center;
