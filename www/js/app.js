@@ -57,6 +57,16 @@ dashboard
     }
   })
 
+  .state('app.cadeau', {
+    url: "/cadeau",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/cadeau.html",
+        controller: 'cadeau'
+      }
+    }
+  })
+
   .state('app.carte', {
     url: "/carte",
     views: {
