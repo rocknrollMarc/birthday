@@ -12,11 +12,17 @@
 		<script id="carte-modal.html" type="text/ng-template">
 		  <ion-modal-view>
 			<ion-header-bar>
-			  <h1 class="title">{{ from }}</h1>
+			  <h1 class="title">{{ message.from }}</h1>
 			  <button ng-click="close()" class="button button-clear">Fermer</button>
 			</ion-header-bar>
-			<ion-content>
-			  {{ text }}
+			<ion-content class="padding">			  
+			  <img ng-src="{{message.avatar}}" style="display: inline-block;vertical-align: top;">
+			  {{ message.text }}
+			  <div class="padding">
+				<span class="ion-ios-heart"></span>
+				<span class="ion-ios-heart"></span>
+				<span class="ion-ios-heart"></span>
+			  </div>
 			</ion-content>
 		  </ion-modal-view>
 		</script>

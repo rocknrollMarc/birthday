@@ -19,7 +19,7 @@ dashboard.controller('carte', function ($scope, $rootScope, $firebase, $ionicMod
 		$scope.loading = false;
 	});
 
-	$ionicModal.fromTemplateUrl('modal.html', {
+	$ionicModal.fromTemplateUrl('carte-modal.html', {
 		scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {

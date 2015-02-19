@@ -1,24 +1,32 @@
 <ion-view>
 	<button ng-click="prev()" ng-show="showPrev" class="dir-left button icon-left ion-chevron-left button-clear button-dark"></button>
-	<ion-slide-box show-pager="true" on-slide-changed="slideHasChanged($index)">
+	<ion-slide-box show-pager="true" on-slide-changed="slideHasChanged($index)" active-slide="slidestop($index)">
 	  <ion-slide id="slide-1">
 		<div class="padding">
 			<h1>Coucou mon petit Maxou !</h1>
 			<h2>Il parait que c'est ton anniversaire aujourd'hui</h2>
-			<img class="padding-top" src="img/hb.gif"/>
+			<div class="tooltip-container" on-release="next()">
+				<img class="padding-top" src="img/hb.gif"/>
+				<p class="tooltip">Caresse-moi !</p>
+			</div>
 		</div>
 	  </ion-slide>
-	  <ion-slide>
+	  <ion-slide id="slide-2">
 		<div class="padding">
-			<h1>Coucou mon petit Maxou 2 !</h1>
+			<h1>As-tu été sage cette année ?</h1>
+			<p class="choice">
+				<ion-radio ng-change="checkWise('Oui')" ng-model="wise" ng-value="'Oui'">Oui</ion-radio>
+				<ion-radio ng-change="checkWise('Non')" ng-model="wise" ng-value="'Non'">Non</ion-radio>
+			</p>
+			<button ng-click="next()" ng-show="wiseValid" class="button button-full button-positive">Continuer l'orgasme ></button>
 		</div>
 	  </ion-slide>
-	  <ion-slide>
+	  <ion-slide id="slide-3">
 		<div class="padding">
-			<h1>Coucou mon petit Maxou 3 !</h1>
-			<a href="#/app/home" class="button button-positive">Go to the awesomeness</a>
+			<h1>Résous ce petit calcul et un monde de merveille s'ouvrira à toi !</h1>
+			<h2>A venir...</h2>
+			<a href="#/app/home" class="button button-full button-valanced">Go to the awesomeness</a>
 		</div>
 	  </ion-slide>
 	</ion-slide-box>
-	<button ng-click="next()" ng-show="showNext" class="dir-right button icon-right ion-chevron-right button-clear button-dark"></button>
 </ion-view>
