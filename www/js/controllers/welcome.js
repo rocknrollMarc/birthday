@@ -50,22 +50,6 @@ dashboard.controller('welcome', function ($scope, $rootScope, $location, $fireba
 	var ref = new Firebase("https://maxou.firebaseio.com");
 	
 	$scope.login = function(){
-		
-		var test = ref.getAuth();
-		if(test && test.facebook.email == 'guillaume.jacquart@live.fr'){
-			$location.path('app/home');
-			return;
-		}
-		
-		ref.authWithOAuthPopup("facebook", function(error, authData) {
-		  if (error) {
-			console.log("Login Failed!", error);
-		  } else {
-			$location.path('app/home');
-			return;
-		  }
-		}, {
-		  scope: "email"
-		});
+		$location.path('app/home');
 	};
 });
