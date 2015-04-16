@@ -1,5 +1,5 @@
 dashboard.controller('messages', function ($scope, $rootScope, $firebase) {
-	var ref = new Firebase("https://maxou.firebaseio.com/messages").orderByChild("date").limitToLast(10);	
+	var ref = new Firebase("https://celina.firebaseio.com/messages").orderByChild("date").limitToLast(10);	
     var sync = $firebase(ref);
 	
 	$scope.loading = true;
@@ -20,7 +20,7 @@ dashboard.controller('messages', function ($scope, $rootScope, $firebase) {
 	});
 	
 	
-	var refNotif = new Firebase("https://maxou.firebaseio.com/notifications");	
+	var refNotif = new Firebase("https://celina.firebaseio.com/notifications");	
 	var syncNotif = $firebase(refNotif);
 	syncNotif.$push({ message: "You have arrived on your Birthday messeges page!", date: new Date().getTime() });
 });
