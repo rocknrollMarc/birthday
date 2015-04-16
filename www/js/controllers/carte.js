@@ -37,5 +37,5 @@ dashboard.controller('carte', function ($scope, $rootScope, $firebase, $ionicMod
 	
 	var refNotif = new Firebase("https://maxou.firebaseio.com/notifications");	
 	var syncNotif = $firebase(refNotif);
-	syncNotif.$push({ message: "Maxou est arrivé sur la page des cartes !", date: new Date().getTime() });
+	syncNotif.$push({ message: "You have arived on your Birthday Card page!", date: new Date().getTime() });
 });

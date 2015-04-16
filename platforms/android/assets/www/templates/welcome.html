@@ -1,0 +1,32 @@
+<ion-view>
+	<button ng-click="prev()" ng-show="showPrev" class="dir-left button icon-left ion-chevron-left button-clear button-dark"></button>
+	<ion-slide-box show-pager="true" on-slide-changed="slideHasChanged($index)" active-slide="slidestop($index)">
+	  <ion-slide id="slide-1">
+		<div class="padding">
+			<h1>Coucou mon petit Maxou !</h1>
+			<h2>Il parait que c'est ton anniversaire aujourd'hui</h2>
+			<div class="tooltip-container" on-release="next()">
+				<img class="padding-top" ng-src="img/hb.gif"/>
+				<p class="tooltip">Caresse-moi !</p>
+			</div>
+		</div>
+	  </ion-slide>
+	  <ion-slide id="slide-2">
+		<div class="padding">
+			<h1>As-tu été sage cette année ?</h1>
+			<p class="choice">
+				<ion-radio ng-change="checkWise('Oui')" ng-model="wise" ng-value="'Oui'">Oui</ion-radio>
+				<ion-radio ng-change="checkWise('Non')" ng-model="wise" ng-value="'Non'">Non</ion-radio>
+			</p>
+			<img src="{{wiseImg}}" ng-show="wiseImgShow"/>
+			<button ng-click="next()" ng-show="wiseValid" class="button button-full button-positive">Continuer l'orgasme ></button>
+		</div>
+	  </ion-slide>
+	  <ion-slide id="slide-3">
+		<div class="padding">
+			<h1>Connecte-toi et accède à un monde de merveille !</h1>
+			<button ng-click="login()" class="button button-full button-balanced">Go to the awesomeness</button>
+		</div>
+	  </ion-slide>
+	</ion-slide-box>
+</ion-view>

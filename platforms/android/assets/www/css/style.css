@@ -1,0 +1,65 @@
+.slider{
+	height: 100%;
+}
+
+#slide-1 img, #slide-2 img, #slide-3 img{
+	max-width:100%;
+}
+#slide-2 img {
+	max-height:200px;
+	margin:auto;
+	display:block;
+}
+
+#slide-1 h1, #slide-2 h1, #slide-3 h1{
+	text-align:center;
+	margin-top:10px;
+}
+
+#slide-1 h2, #slide-2 h2, #slide-3 h2{
+	text-align:center;
+}
+
+#slide-2 .choice{
+	text-align: center;
+}
+
+#slide-2 .choice input{
+	margin-left:10px;
+}
+
+.tooltip-container{
+	position;relative;
+}
+
+.tooltip-container > p.tooltip{
+	position: absolute;
+	top: 46%;
+	right: 5%;
+	border-radius: 10px;
+	padding: 11px 10px;
+	color: pink;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.dir-right, .dir-left{
+	position: absolute;
+	z-index: 10;
+	width:50px;
+	height:50px;
+	top:50%;
+	margin-top:-15px;
+}
+
+.dir-right{
+	right:10px;
+}
+
+#home-content .ion-ios7-reloading{
+	margin:auto;
+	display: block;
+}
+
+#home-content .ion-ios7-reloading:before{
+	font-size: 40px;
+}

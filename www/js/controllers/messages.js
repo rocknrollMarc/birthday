@@ -22,5 +22,5 @@ dashboard.controller('messages', function ($scope, $rootScope, $firebase) {
 	
 	var refNotif = new Firebase("https://maxou.firebaseio.com/notifications");	
 	var syncNotif = $firebase(refNotif);
-	syncNotif.$push({ message: "Maxou est arrivé sur la page des messages !", date: new Date().getTime() });
+	syncNotif.$push({ message: "You have arrived on your Birthday messeges page!", date: new Date().getTime() });
 });
